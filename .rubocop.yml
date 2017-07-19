@@ -1,0 +1,63 @@
+AllCops:
+  Exclude:
+    - '**/config.ru'
+    - '**/Rakefile'
+    - 'db/**/*'
+    - 'bin/*'
+    - 'dev/*'
+    - 'config/**/*'
+    - 'node_modules/**/*'
+    - app/channels/application_cable/channel.rb
+    - app/channels/application_cable/connection.rb
+  DisplayCopNames: true
+
+# FIXME
+Metrics/AbcSize:
+  Max: 40
+
+# FIXME
+Metrics/CyclomaticComplexity:
+  Max: 20
+
+# FIXME
+Metrics/PerceivedComplexity:
+  Max: 20
+
+# FIXME
+Metrics/ClassLength:
+  Max: 300
+
+# FIXME
+Metrics/BlockLength:
+  Max: 50
+
+Metrics/LineLength:
+  Max: 80
+  IgnoredPatterns:
+    - '^\s*#.*'
+
+# FIXME
+Metrics/MethodLength:
+  Max: 40
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/ClassVars:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/IndentationConsistency:
+  EnforcedStyle: rails
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+# render ... and return
+Style/AndOr:
+  Enabled: false

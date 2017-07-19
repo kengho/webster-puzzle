@@ -1,0 +1,17 @@
+body {
+  /* 'Prevent' text 'jumping' when scollbar appears. */
+  overflow-y: scroll;
+}
+
+* {
+  color: #333;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.github-mark {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}

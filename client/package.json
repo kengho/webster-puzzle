@@ -1,0 +1,23 @@
+{
+  "name": "webster-puzzle-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "path-to-regexp": "^1.7.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-github-mark": "^1.0.0",
+    "react-router-dom": "^4.1.1",
+    "react-scroll": "^1.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "https://kengho.tech/webster-puzzle"
+}

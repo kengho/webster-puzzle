@@ -1,0 +1,85 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.controls.top-center {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.controls.center-center {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.start-puzzle {
+  display: inline-block;
+}
+
+.start-puzzle button {
+  /* Copied from .mdl-button.mdl-button--raised.mdl-button--colored */
+  /* https://github.com/google/material-design-lite */
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  cursor: pointer;
+  font-weight: 500;
+  height: 36px;
+  margin: 8px;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+
+.start-puzzle button[disabled] {
+  /* Colors from .mdl-button--raised[disabled] */
+  /* https://github.com/google/material-design-lite */
+  background: gba(0, 0, 0, .12);
+  color: rgba(0, 0, 0, .26);
+  box-shadow: none;
+  cursor: auto;
+}
+
+.center-center .start-puzzle button {
+  /* Colors from .mdl-button.mdl-button--raised.mdl-button--colored */
+  /* https://github.com/google/material-design-lite */
+  background: #3f51b5;
+  color: white;
+}
+
+.center-center .top-center button {
+  /* Colors from .mdl-button--raised */
+  /* https://github.com/google/material-design-lite */
+  background: rgba(158, 158, 158,. 2);
+  color: black;
+}
+
+.difficulty {
+  display: inline-block;
+}
+
+.difficulty input[type="radio"] {
+  display: none;
+}
+
+.difficulty label {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px;
+  text-transform: lowercase;
+}
+
+.difficulty input[type="radio"]:checked+label {
+  /* Colors from .mdl-switch__track */
+  /* https://github.com/google/material-design-lite */
+  background-color: rgba(63, 81, 181, .5);
+  color: white;
+}

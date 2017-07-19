@@ -1,0 +1,66 @@
+.current-steps {
+  /* Waits while controls animation finishes. */
+  animation-delay: 0.25s;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-name: current-steps-appear;
+  background: white;
+  margin-top: 80px;
+  opacity: 0;
+  padding: 8px;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/*https://www.w3schools.com/css/css_tooltip.asp*/
+.tooltip {
+  border-bottom: 1px dotted black;
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  bottom: 150%;
+  font-size: 12px;
+  left: 50%;
+  margin-left: -40px;
+
+  background-color: #999;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+  visibility: hidden;
+  width: 80px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #999 transparent transparent transparent;
+}
+
+@keyframes current-steps-appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

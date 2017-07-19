@@ -1,0 +1,35 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+}
+
+.step-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.step-row.last {
+  animation-name: step-row-appear;
+  animation-duration: 0.25s;
+}
+
+.step {
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.definitions {
+  padding: 8px;
+}
+
+@keyframes step-row-appear {
+  0% {
+    opacity: 0;
+    transform: translate(16px, 0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

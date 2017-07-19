@@ -1,0 +1,46 @@
+.solved {
+  font-size: 96px;
+  letter-spacing: 8px;
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.solved.animate {
+  animation-name: appear-disappear;
+  animation-delay: 0.25s;
+  animation-duration: 4s;
+}
+
+@keyframes appear-disappear {
+  0% {
+    /* Color from .mdl-button.mdl-button--raised.mdl-button--colored */
+    /* https://github.com/google/material-design-lite */
+    color: #3f51b5;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    color: #333;
+  }
+
+  90% {
+    opacity: 1;
+    color: #333;
+  }
+
+  100% {
+    /* Color from .mdl-button.mdl-button--raised.mdl-button--colored */
+    /* https://github.com/google/material-design-lite */
+    opacity: 0;
+    color: #3f51b5;
+  }
+}

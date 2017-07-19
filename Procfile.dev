@@ -1,0 +1,2 @@
+server: RAILS_ENV=development puma -C config/puma.rb
+client: cd client && BROWSER=none npm start
