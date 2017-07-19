@@ -1,8 +1,8 @@
 class Api::V1::PuzzlesController < Api::V1::BaseController
   DIFFICULTY_PATH_SIZE_MAP = {
-    'EASY' => 3..4,
-    'MEDIUM' => 5..7,
-    'HARD' => 8..10,
+    'EASY' => 3,
+    'MEDIUM' => 4..5,
+    'HARD' => 6..7,
     'ANY' => 0..Float::INFINITY,
   }.freeze
 
