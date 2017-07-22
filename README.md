@@ -73,7 +73,7 @@ http://localhost:5000 should display landing page.
 TODO: move kengho.tech instructions out of here and spreadsheet.
 --->
 
-[kengho.tech webster-puzzle deploy instructions](https://gist.github.com/kengho/33a3e3da78006be1c9176af419f77063) (Puma + Nginx).
+[kengho.tech webster-puzzle deploy instructions](https://gist.github.com/kengho/1c075f1459a571a5ac93510f83afdd2e) (Puma + Nginx).
 
 ## License
 
