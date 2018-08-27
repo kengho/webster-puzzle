@@ -156,7 +156,7 @@ class Puzzle extends Component {
           newPath = `${process.env.REACT_APP_RELATIVE_URL_ROOT}${newPath}`;
         }
         this.props.history.push(newPath);
-      })
+      });
   }
 
   updateState(props) {
@@ -226,6 +226,8 @@ class Puzzle extends Component {
 
     const startPuzzleText = steps ? 'try another puzzle' : 'start';
 
+    // FIXME: for some reason "puzzles" with path_size == 2 are not solving immediately.
+    //   See https://kengho.tech/webster-puzzle/volumescope/volumenometry
     return (
       <div>
         <div className={`controls ${steps ? 'top-center' : 'center-center'}`}>

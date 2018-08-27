@@ -3,8 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom'
-
 import GithubMark from 'react-github-mark';
+
 import './App.css';
 import Puzzle from './Puzzle';
 
