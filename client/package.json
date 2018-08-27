@@ -19,5 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://kengho.tech/webster-puzzle"
+  "homepage": "https://webster-puzzle.kengho.tech"
 }

@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live
 
-[https://kengho.tech/webster-puzzle](https://kengho.tech/webster-puzzle)
+[https://webster-puzzle.kengho.tech](https://webster-puzzle.kengho.tech)
 
 ## Installing
 
